@@ -1,20 +1,13 @@
 {
-  "extends": "../../tsconfigbase",
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "composite": true,
     "declaration": true,
     "noImplicitAny": true,
     "noEmitOnError": true,
     "noUnusedLocals": true,
-    "esModuleInterop": true,
-    "preserveWatchOutput": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "target": "es2015",
+    "target": "ES5",
     "lib": ["dom", "es2015"],
-    "jsx": "react",
     "types": [],
 
     "outDir": "lib",

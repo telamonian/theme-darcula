@@ -19,7 +19,7 @@ const plugin: JupyterLabPlugin<void> = {
       name: 'Telamonian Darcula',
       isLight: false,
       load: function() {
-        return manager.loadCSS('telamonian-theme-darcula/index.css');
+        return manager.loadCSS('@telamonian/theme-darcula/index.css');
       },
       unload: function() {
         return Promise.resolve(void 0);
