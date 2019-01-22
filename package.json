@@ -7,7 +7,7 @@
     "url": "https://github.com/telamonian/theme-darcula/issues"
   },
   "license": "BSD-3-Clause",
-  "author": "Project Jupyter",
+  "author": "Max Klein",
   "files": [
     "lib/*.d.ts",
     "lib/*.js.map",
