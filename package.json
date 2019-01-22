@@ -2,6 +2,14 @@
   "name": "@telamonian/theme-darcula",
   "version": "0.19.1",
   "description": "Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "jupyterlab-theme",
+    "darcula",
+    "darcula-theme"
+  ],
   "homepage": "https://github.com/telamonian/theme-darcula",
   "bugs": {
     "url": "https://github.com/telamonian/theme-darcula/issues"
