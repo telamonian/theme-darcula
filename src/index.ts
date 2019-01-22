@@ -1,4 +1,3 @@
-
 import {
   JupyterLab, JupyterLabPlugin
 } from '@jupyterlab/application';
@@ -6,7 +5,6 @@ import {
 import {
   IThemeManager
 } from '@jupyterlab/apputils';
-
 
 /**
  * A plugin for the Telamonian Darcula
@@ -28,6 +26,5 @@ const plugin: JupyterLabPlugin<void> = {
   },
   autoStart: true
 };
-
 
 export default plugin;

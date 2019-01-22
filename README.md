@@ -1,2 +1,3 @@
-@telamonian/theme-darcula
-theme for Jupyterlab. Cozy like Intellij on a Sunday morning
+# @telamonian-theme-darcula
+
+Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.
