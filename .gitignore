@@ -31,7 +31,6 @@ __pycache__
 
 *.swp
 *.map
-.idea/
 
 coverage/
 tests/**/coverage
@@ -48,3 +47,7 @@ lerna-debug.log
 yarn-error.log
 
 junit.xml
+
+# jetbrains IDE working files
+.idea/
+/*.iml

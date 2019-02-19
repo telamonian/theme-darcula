@@ -7,15 +7,15 @@ import {
 } from '@jupyterlab/apputils';
 
 /**
- * A plugin for the Telamonian Darcula
+ * A plugin for @telamonian/theme-darcula
  */
 const plugin: JupyterLabPlugin<void> = {
   id: '@telamonian/theme-darcula:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
     manager.register({
-      name: 'Telamonian Darcula',
-      isLight: false,
+      name: 'theme-darcula',
+      isLight: true,
       load: function() {
         return manager.loadCSS('@telamonian/theme-darcula/index.css');
       },
