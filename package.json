@@ -33,10 +33,9 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "build:webpack": "webpack",
     "clean": "rimraf lib",
-    "prepublishOnly": "npm run build",
-    "watch": "tsc -b --watch"
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
   },
   "dependencies": {
     "@jupyterlab/application": "^0.19.1",
