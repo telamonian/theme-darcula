@@ -1,27 +1,24 @@
 import {
-  JupyterLab, JupyterLabPlugin
+  JupyterFrontEnd,
+  JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
-import {
-  IThemeManager
-} from '@jupyterlab/apputils';
+import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
  * A plugin for @telamonian/theme-darcula
  */
-const plugin: JupyterLabPlugin<void> = {
+const plugin: JupyterFrontEndPlugin<void> = {
   id: '@telamonian/theme-darcula:plugin',
   requires: [IThemeManager],
-  activate: function(app: JupyterLab, manager: IThemeManager) {
+  activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
+    const style = '@telamonian/theme-darcula/index.css';
+
     manager.register({
       name: 'theme-darcula',
       isLight: true,
-      load: function() {
-        return manager.loadCSS('@telamonian/theme-darcula/index.css');
-      },
-      unload: function() {
-        return Promise.resolve(void 0);
-      }
+      load: () => manager.loadCSS(style),
+      unload: () => Promise.resolve(undefined)
     });
   },
   autoStart: true
