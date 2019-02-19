@@ -9,7 +9,7 @@ cache:
   directories:
     - /home/travis/.yarn-cache/
 
-before_script:
+before_install:
   - source ./.ci_funcs.sh
 install:
   - ci_install
