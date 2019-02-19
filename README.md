@@ -1,5 +1,7 @@
 # @telamonian/theme-darcula
 
+[![Build Status](https://travis-ci.org/telamonian/theme-darcula.svg?branch=master)](https://travis-ci.org/telamonian/theme-darcula)
+
 Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.
 
 ## Prerequisites

@@ -27,7 +27,7 @@ ci_script() {
 
     # enable the theme in user-settings
     mkdir -p $(dirname $THEME_SETTINGS)
-    printf "%s\n" "{" "    \"theme\": \"mytheme\"" "}" > $THEME_SETTINGS
+    printf "%s\n" "{" "    \"theme\": \"theme-darcula\"" "}" > $THEME_SETTINGS
 
     # print out a confirmation that the extension is installed
     jupyter labextension list
@@ -35,12 +35,3 @@ ci_script() {
     # run a test of the main JupyterLab app with the theme enabled
     python -m jupyterlab.browser_check
 }
-
-while getopts ":is" flag; do
-    case "${flag}" in
-        i) ci_install
-           return 0 ;;
-        s) ci_script
-           return 0 ;;
-    esac
-done
