@@ -1,0 +1,17 @@
+sudo: false
+dist: trusty
+
+language: python
+python: 3.6
+
+cache:
+  pip: true
+  directories:
+    - /home/travis/.yarn-cache/
+
+before_install:
+  - source ./.ci_funcs.sh
+install:
+  - ci_install
+script:
+  - ci_script
