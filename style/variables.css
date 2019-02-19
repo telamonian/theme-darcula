@@ -180,18 +180,18 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-code-font-size: 15px;
-  --jp-code-line-height: 1.5089; /*1.3077;*/ /* 17px for 13px base */
-  --jp-code-padding: 0.4442; /*0.385em;*/ /* 5px for 13px base */
+  --jp-code-line-height: 1.3077; /* 17px for 15px base */
+  --jp-code-padding: 0.385em; /* 5px for 15px base */
   --jp-code-font-family-default: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
   --jp-code-font-family: var(--jp-code-font-family-default);
 
   /* This gives a magnification of about 125% in presentation mode over normal. */
-  --jp-code-presentation-font-size: 20px;
+  --jp-code-presentation-font-size: 1.25em;
 
   /* may need to tweak cursor width if you change font size */
-  --jp-code-cursor-width0: 1.6154px;
-  --jp-code-cursor-width1: 2.3077px;
-  --jp-code-cursor-width2: 4.6154px;
+  --jp-code-cursor-width0: 0.107em;
+  --jp-code-cursor-width1: 0.154em;
+  --jp-code-cursor-width2: 0.308em;
 
   /* Layout
    *

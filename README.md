@@ -4,6 +4,8 @@
 
 Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.
 
+![darcula_preview](darcula_preview.png)
+
 ## Prerequisites
 
 * JupyterLab
