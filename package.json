@@ -1,6 +1,6 @@
 {
   "name": "theme-darcula",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.3",
   "description": "Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.",
   "author": "Max Klein",
   "keywords": [
@@ -23,11 +23,9 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "build:webpack": "webpack",
-    "clean": "rimraf lib && rimraf static",
+    "clean": "rimraf lib",
     "prepare": "npm run clean && npm run build",
     "watch": "tsc -w",
-    "watch:webpack": "webpack --watch"
   },
   "dependencies": {
     "@jupyterlab/application": "^1.0.0-alpha.3",
