@@ -189,9 +189,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-code-presentation-font-size: 1.25em;
 
   /* may need to tweak cursor width if you change font size */
-  --jp-code-cursor-width0: 0.107em;
-  --jp-code-cursor-width1: 0.154em;
-  --jp-code-cursor-width2: 0.308em;
+  --jp-code-cursor-width0: 2px; /*0.107em;*/
+  --jp-code-cursor-width1: 3px; /*0.154em;*/
+  --jp-code-cursor-width2: 6px; /*0.308em;*/
 
   /* Layout
    *
@@ -422,4 +422,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Sidebar-related styles */
 
   --jp-sidebar-min-width: 180px;
+
+  /* scrollbar related styles */
+  --jp-scrollbar-thumb-color: var(--jp-layout-color1);
+  --jp-scrollbar-background-color: var(--jp-layout-color2);
+  --jp-scrollbar-border: 1px solid var(--jp-border-color1);
+  --jp-scrollbar-width: 16px;
 }

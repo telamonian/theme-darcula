@@ -1,0 +1,81 @@
+@import './variables.css';
+
+.p-CommandPalette-content::-webkit-scrollbar {
+    background-color: var(--jp-layout-color1);
+    border-left: 1px solid var(--jp-border-color1);
+    width: var(--jp-scrollbar-width);
+}
+
+
+.p-CommandPalette-content::-webkit-scrollbar-thumb {
+    background-color: var(--jp-layout-color2);
+    border-left: 1px solid var(--jp-border-color1);
+    border-radius: 0px;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar, .CodeMirror-hscrollbar::-webkit-scrollbar {
+    background-color: var(--jp-layout-color0);
+    width: var(--jp-scrollbar-width);
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+    border-left: 1px solid var(--jp-border-color1);
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar {
+    border-top: 1px solid var(--jp-border-color1);
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb, .CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--jp-layout-color2);
+    border-radius: 0px;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
+    border-left: 1px solid var(--jp-border-color1);
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
+    border-top: 1px solid var(--jp-border-color1);
+}
+
+.jp-DirListing-content::-webkit-scrollbar {
+    background-color: var(--jp-layout-color1);
+    border-left: 1px solid var(--jp-border-color1);
+    width: var(--jp-scrollbar-width);
+}
+
+
+.jp-DirListing-content::-webkit-scrollbar-thumb {
+    background-color: var(--jp-layout-color2);
+    border-radius: 0px;
+    border-left: 1px solid var(--jp-border-color1);
+}
+
+.jp-Launcher-body::-webkit-scrollbar {
+    background-color: var(--jp-scrollbar-background-color);
+    border-left: var(--jp-scrollbar-border);
+}
+
+
+.jp-Launcher-body::-webkit-scrollbar-thumb {
+    background-color: var(--jp-scrollbar-thumb-color);
+    border-radius: 0px;
+    border-left: var(--jp-scrollbar-border);
+}
+
+.jp-Notebook::-webkit-scrollbar {
+    background-color: var(--jp-layout-color0);
+    border-left: 1px solid var(--jp-border-color1);
+    width: var(--jp-scrollbar-width);
+}
+
+
+.jp-Notebook::-webkit-scrollbar-thumb {
+    background-color: var(--jp-layout-color2);
+    border-left: 1px solid var(--jp-border-color1);
+}
+
+.jp-Notebook a:-webkit-any-link {
+    color: var(--md-blue-500);
+}
