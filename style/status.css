@@ -2,6 +2,18 @@
     background-color: var(--jp-layout-color2)
 }
 
-#jp-main-statusbar > .p-Widget >.p-Widget:hover {
-    background-color: var(--jp-layout-color3)
+/*#jp-main-statusbar > .p-Widget >.p-Widget:hover {*/
+    /*background-color: var(--jp-layout-color3)*/
+/*}*/
+
+/*#jp-main-statusbar [class*=jp-interactiveItem]:hover {*/
+    /*background-color: var(--jp-layout-color3);*/
+/*}*/
+
+/*#jp-main-statusbar [class*=jp-clickedItem] {*/
+    /*background-color: var(--jp-layout-color4);*/
+/*}*/
+
+#jp-main-statusbar span {
+    color: var(--jp-ui-font-color1);
 }
