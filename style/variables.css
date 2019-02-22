@@ -37,51 +37,51 @@ all of MD as it is not optimized for dense, information rich UIs.
    * colors used in the theme as well. */
   --jp-shadow-base-lightness: 32;
   --jp-shadow-umbra-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.2
+          var(--jp-shadow-base-lightness),
+          var(--jp-shadow-base-lightness),
+          var(--jp-shadow-base-lightness),
+          0.2
   );
   --jp-shadow-penumbra-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.14
+          var(--jp-shadow-base-lightness),
+          var(--jp-shadow-base-lightness),
+          var(--jp-shadow-base-lightness),
+          0.14
   );
   --jp-shadow-ambient-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.12
+          var(--jp-shadow-base-lightness),
+          var(--jp-shadow-base-lightness),
+          var(--jp-shadow-base-lightness),
+          0.12
   );
   --jp-elevation-z0: none;
   --jp-elevation-z1: 0px 2px 1px -1px var(--jp-shadow-umbra-color),
-    0px 1px 1px 0px var(--jp-shadow-penumbra-color),
-    0px 1px 3px 0px var(--jp-shadow-ambient-color);
+  0px 1px 1px 0px var(--jp-shadow-penumbra-color),
+  0px 1px 3px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z2: 0px 3px 1px -2px var(--jp-shadow-umbra-color),
-    0px 2px 2px 0px var(--jp-shadow-penumbra-color),
-    0px 1px 5px 0px var(--jp-shadow-ambient-color);
+  0px 2px 2px 0px var(--jp-shadow-penumbra-color),
+  0px 1px 5px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z4: 0px 2px 4px -1px var(--jp-shadow-umbra-color),
-    0px 4px 5px 0px var(--jp-shadow-penumbra-color),
-    0px 1px 10px 0px var(--jp-shadow-ambient-color);
+  0px 4px 5px 0px var(--jp-shadow-penumbra-color),
+  0px 1px 10px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z6: 0px 3px 5px -1px var(--jp-shadow-umbra-color),
-    0px 6px 10px 0px var(--jp-shadow-penumbra-color),
-    0px 1px 18px 0px var(--jp-shadow-ambient-color);
+  0px 6px 10px 0px var(--jp-shadow-penumbra-color),
+  0px 1px 18px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z8: 0px 5px 5px -3px var(--jp-shadow-umbra-color),
-    0px 8px 10px 1px var(--jp-shadow-penumbra-color),
-    0px 3px 14px 2px var(--jp-shadow-ambient-color);
+  0px 8px 10px 1px var(--jp-shadow-penumbra-color),
+  0px 3px 14px 2px var(--jp-shadow-ambient-color);
   --jp-elevation-z12: 0px 7px 8px -4px var(--jp-shadow-umbra-color),
-    0px 12px 17px 2px var(--jp-shadow-penumbra-color),
-    0px 5px 22px 4px var(--jp-shadow-ambient-color);
+  0px 12px 17px 2px var(--jp-shadow-penumbra-color),
+  0px 5px 22px 4px var(--jp-shadow-ambient-color);
   --jp-elevation-z16: 0px 8px 10px -5px var(--jp-shadow-umbra-color),
-    0px 16px 24px 2px var(--jp-shadow-penumbra-color),
-    0px 6px 30px 5px var(--jp-shadow-ambient-color);
+  0px 16px 24px 2px var(--jp-shadow-penumbra-color),
+  0px 6px 30px 5px var(--jp-shadow-ambient-color);
   --jp-elevation-z20: 0px 10px 13px -6px var(--jp-shadow-umbra-color),
-    0px 20px 31px 3px var(--jp-shadow-penumbra-color),
-    0px 8px 38px 7px var(--jp-shadow-ambient-color);
+  0px 20px 31px 3px var(--jp-shadow-penumbra-color),
+  0px 8px 38px 7px var(--jp-shadow-ambient-color);
   --jp-elevation-z24: 0px 11px 15px -7px var(--jp-shadow-umbra-color),
-    0px 24px 38px 3px var(--jp-shadow-penumbra-color),
-    0px 9px 46px 8px var(--jp-shadow-ambient-color);
+  0px 24px 38px 3px var(--jp-shadow-penumbra-color),
+  0px 9px 46px 8px var(--jp-shadow-ambient-color);
 
   /* Borders
    *
@@ -112,28 +112,28 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-ui-font-size3: 1.44em;
 
   --jp-ui-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   /*
    * Use these font colors against the corresponding main layout colors.
    * In a light theme, these go from dark to light.
    */
 
-  /* Defaults use Material Design specification */
-  --jp-ui-font-color0: #A9B7C6;
-  --jp-ui-font-color1: var(--md-grey-300);
-  --jp-ui-font-color2: var(--md-grey-500);
-  --jp-ui-font-color3: var(--md-grey-700);
+  /* Darkening colors */
+  --jp-ui-font-color0: rgba(195, 195, 195, 1);
+  --jp-ui-font-color1: rgba(195, 195, 195, .7);
+  --jp-ui-font-color2: rgba(195, 195, 195, .3);
+  --jp-ui-font-color3: rgba(195, 195, 195, .02);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
-  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
-  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+  --jp-ui-inverse-font-color0: rgba(30, 33, 36, 1);
+  --jp-ui-inverse-font-color1: rgba(30, 33, 36, 0.8);
+  --jp-ui-inverse-font-color2: rgba(30, 33, 36, 0.5);
+  --jp-ui-inverse-font-color3: rgba(30, 33, 36, 0.3);
 
   /* Content Fonts
    *
@@ -161,17 +161,17 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-margin-bottom: 0.8em;
   --jp-content-heading-font-weight: 500;
 
-  /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(255, 255, 255, 1);
-  --jp-content-font-color1: rgba(255, 255, 255, 1);
-  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+  /* Shades of the default font color */
+  --jp-content-font-color0: rgba(187, 187, 187, 1);
+  --jp-content-font-color1: rgba(187, 187, 187, 1);
+  --jp-content-font-color2: rgba(187, 187, 187, 0.7);
+  --jp-content-font-color3: rgba(187, 187, 187, 0.5);
 
   --jp-content-link-color: var(--md-blue-300);
 
   --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
 
   /*
    * Code Fonts
@@ -293,8 +293,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   notebook. This padding is to enable a 'scroll past end' feature in a notebook.
   */
   --jp-notebook-scroll-padding: calc(
-    100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
-      var(--jp-code-padding) - var(--jp-cell-padding) - 1px
+          100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
+          var(--jp-code-padding) - var(--jp-cell-padding) - 1px
   );
 
   /* Rendermime styles */
@@ -335,56 +335,56 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-editor-selected-focused-background: #214283; /*rgba(33, 150, 243, 0.24);*/
   --jp-editor-cursor-color: #A9B7C6; /*{ border-left: 1px solid var(--jp-ui-font-color0) };*/
 
-/*
-  .cm-s-darcula .CodeMirror-cursor { border-left: 1px solid #A9B7C6; }
-  .cm-s-darcula .CodeMirror-activeline-background { background: #323232; }
-  .cm-s-darcula .CodeMirror-gutters { background: #313335; border-right: 1px solid #313335; }
-  .cm-s-darcula .CodeMirror-guttermarker { color: #FFEE80; }
-  .cm-s-darcula .CodeMirror-guttermarker-subtle { color: #D0D0D0; }
-  .cm-s-darcula .CodeMirrir-linenumber { color: #606366; }
-  .cm-s-darcula .CodeMirror-matchingbracket { background-color: #3B514D; color: #FFEF28 !important; font-weight: bold; }
+  /*
+    .cm-s-darcula .CodeMirror-cursor { border-left: 1px solid #A9B7C6; }
+    .cm-s-darcula .CodeMirror-activeline-background { background: #323232; }
+    .cm-s-darcula .CodeMirror-gutters { background: #313335; border-right: 1px solid #313335; }
+    .cm-s-darcula .CodeMirror-guttermarker { color: #FFEE80; }
+    .cm-s-darcula .CodeMirror-guttermarker-subtle { color: #D0D0D0; }
+    .cm-s-darcula .CodeMirrir-linenumber { color: #606366; }
+    .cm-s-darcula .CodeMirror-matchingbracket { background-color: #3B514D; color: #FFEF28 !important; font-weight: bold; }
 
-  .cm-s-darcula div.CodeMirror-selected { background: #214283; }
+    .cm-s-darcula div.CodeMirror-selected { background: #214283; }
 
-  .CodeMirror-hints.darcula {
-    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-    color: #9C9E9E;
-    background-color: #3B3E3F !important;
-  }
+    .CodeMirror-hints.darcula {
+      font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+      color: #9C9E9E;
+      background-color: #3B3E3F !important;
+    }
 
-  .CodeMirror-hints.darcula .CodeMirror-hint-active {
-    background-color: #494D4E !important;
-    color: #9C9E9E !important;
-  }
+    .CodeMirror-hints.darcula .CodeMirror-hint-active {
+      background-color: #494D4E !important;
+      color: #9C9E9E !important;
+    }
 
-  .cm-s-darcula  { font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;}
-  .cm-s-darcula.CodeMirror { background: #2B2B2B; color: #A9B7C6; }
+    .cm-s-darcula  { font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;}
+    .cm-s-darcula.CodeMirror { background: #2B2B2B; color: #A9B7C6; }
 
-  .cm-s-darcula span.cm-keyword    { color: #CC7832; line-height: 1em; font-weight: bold; }
-  .cm-s-darcula span.cm-atom       { color: #CC7832; }
-  .cm-s-darcula span.cm-number     { color: #6897BB; }
-  .cm-s-darcula span.cm-def        { color: #A9B7C6; font-style: italic; }
-  .cm-s-darcula span.cm-variable   { color: #A9B7C6; }
-  .cm-s-darcula span.cm-variable-2 { color: #A9B7C6; }
-  .cm-s-darcula span.cm-variable-3 { color: #9876AA; }
-  .cm-s-darcula span.cm-special    { color: #FF9E59; }
-  .cm-s-darcula span.cm-property   { color: #FFC66D; }
-  .cm-s-darcula span.cm-operator   { color: #A9B7C6; }
-  .cm-s-darcula span.cm-comment    { color: #61A151; font-style: italic; }
-  .cm-s-darcula span.cm-string     { color: #6A8759; }
-  .cm-s-darcula span.cm-string-2   { color: #6A8759; }
-  .cm-s-darcula span.cm-meta       { color: #BBB529; }
-  .cm-s-darcula span.cm-qualifier  { color: #6A8759; }
-  .cm-s-darcula span.cm-builtin    { color: #FF9E59; }
-  .cm-s-darcula span.cm-bracket    { color: #A9B7C6; }
-  .cm-s-darcula span.cm-tag        { color: #629755; font-weight: bold; font-style: italic; text-decoration: underline; }
-  .cm-s-darcula span.cm-attribute  { color: #6897bb; }
+    .cm-s-darcula span.cm-keyword    { color: #CC7832; line-height: 1em; font-weight: bold; }
+    .cm-s-darcula span.cm-atom       { color: #CC7832; }
+    .cm-s-darcula span.cm-number     { color: #6897BB; }
+    .cm-s-darcula span.cm-def        { color: #A9B7C6; font-style: italic; }
+    .cm-s-darcula span.cm-variable   { color: #A9B7C6; }
+    .cm-s-darcula span.cm-variable-2 { color: #A9B7C6; }
+    .cm-s-darcula span.cm-variable-3 { color: #9876AA; }
+    .cm-s-darcula span.cm-special    { color: #FF9E59; }
+    .cm-s-darcula span.cm-property   { color: #FFC66D; }
+    .cm-s-darcula span.cm-operator   { color: #A9B7C6; }
+    .cm-s-darcula span.cm-comment    { color: #61A151; font-style: italic; }
+    .cm-s-darcula span.cm-string     { color: #6A8759; }
+    .cm-s-darcula span.cm-string-2   { color: #6A8759; }
+    .cm-s-darcula span.cm-meta       { color: #BBB529; }
+    .cm-s-darcula span.cm-qualifier  { color: #6A8759; }
+    .cm-s-darcula span.cm-builtin    { color: #FF9E59; }
+    .cm-s-darcula span.cm-bracket    { color: #A9B7C6; }
+    .cm-s-darcula span.cm-tag        { color: #629755; font-weight: bold; font-style: italic; text-decoration: underline; }
+    .cm-s-darcula span.cm-attribute  { color: #6897bb; }
 
-  .cm-s-darcula span.cm-link      { color: #CC7832; }
-  .cm-s-darcula span.cm-error     { color: #BC3F3C; }
+    .cm-s-darcula span.cm-link      { color: #CC7832; }
+    .cm-s-darcula span.cm-error     { color: #BC3F3C; }
 
-  .cm-s-darcula span.cm-type { color: #AABBCC; font-weight: bold; }
-*/
+    .cm-s-darcula span.cm-type { color: #AABBCC; font-weight: bold; }
+  */
 
   /* Code mirror specific styles */
   --jp-mirror-editor-keyword-color:     #CC7832;
@@ -423,15 +423,20 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-sidebar-min-width: 180px;
 
-  /* scrollbar related styles.
-   * These only work on webkit browsers, such as Chrome or Safari
+  /* Search-related styles */
+
+  --jp-search-toggle-off-opacity: 0.5;
+  --jp-search-toggle-hover-opacity: 0.75;
+  --jp-search-toggle-on-opacity: 1;
+
+  /* scrollbar related styles. Supports every browser except Edge.
+   * On Firefox, only the color settings are respected.
    */
 
   --jp-scrollbar-background-color: #3f4244;
-  --jp-scrollbar-pad: 3px;
+  --jp-scrollbar-endpad: 3px;    /* the minimum gap between the thumb and the ends of a scrollbar */
 
-  /* need to specify thumb color as an RGB triplet */
-  --jp-scrollbar-thumb-color: 88, 96, 97;
-  --jp-scrollbar-thumb-border: 3.5px solid transparent;
-  --jp-scrollbar-thumb-radius: 9px;
+  --jp-scrollbar-thumb-color: 88, 96, 97;    /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-thumb-margin: 3.5px;    /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px;    /* set to a large-ish value for rounded endcaps on the thumb */
 }
