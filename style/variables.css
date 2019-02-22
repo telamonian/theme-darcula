@@ -423,9 +423,15 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-sidebar-min-width: 180px;
 
-  /* scrollbar related styles */
-  --jp-scrollbar-thumb-color: var(--jp-layout-color1);
-  --jp-scrollbar-background-color: var(--jp-layout-color2);
-  --jp-scrollbar-border: 1px solid var(--jp-border-color1);
-  --jp-scrollbar-width: 16px;
+  /* scrollbar related styles.
+   * These only work on webkit browsers, such as Chrome or Safari
+   */
+
+  --jp-scrollbar-background-color: #3f4244;
+  --jp-scrollbar-pad: 3px;
+
+  /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-thumb-color: 88, 96, 97;
+  --jp-scrollbar-thumb-border: 3.5px solid transparent;
+  --jp-scrollbar-thumb-radius: 9px;
 }

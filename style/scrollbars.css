@@ -1,0 +1,53 @@
+@import './variables.css';
+
+/* use standard opaque scrollbars for most nodes */
+
+::-webkit-scrollbar {
+    background: var(--jp-scrollbar-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(var(--jp-scrollbar-thumb-color));
+    border: var(--jp-scrollbar-thumb-border);
+    background-clip: content-box;
+    border-radius: var(--jp-scrollbar-thumb-radius);
+}
+
+/* always leave a pad in between the thumb and the end of the track
+   of the opaque scrollbars */
+
+::-webkit-scrollbar-track:horizontal {
+    border-left:  var(--jp-scrollbar-pad) solid var(--jp-scrollbar-background-color);
+    border-right: var(--jp-scrollbar-pad) solid var(--jp-scrollbar-background-color);
+}
+
+::-webkit-scrollbar-track:vertical {
+    border-top:    var(--jp-scrollbar-pad) solid var(--jp-scrollbar-background-color);
+    border-bottom: var(--jp-scrollbar-pad) solid var(--jp-scrollbar-background-color);
+}
+
+/* for code nodes, use a transparent style of scrollbar */
+
+.CodeMirror-hscrollbar::-webkit-scrollbar, .CodeMirror-vscrollbar::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb, .CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
+    background: rgba(var(--jp-scrollbar-thumb-color), .5);
+    border: var(--jp-scrollbar-thumb-border);
+    background-clip: content-box;
+    border-radius: var(--jp-scrollbar-thumb-radius);
+}
+
+/* always leave a pad in between the thumb and the end of the track
+   of the transparent scrollbars*/
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-track:horizontal {
+    border-left:  var(--jp-scrollbar-pad) solid transparent;
+    border-right: var(--jp-scrollbar-pad) solid transparent;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar-track:vertical {
+    border-top:    var(--jp-scrollbar-pad) solid transparent;
+    border-bottom: var(--jp-scrollbar-pad) solid transparent;
+}
