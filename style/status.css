@@ -1,0 +1,7 @@
+#jp-main-statusbar {
+    background-color: var(--jp-layout-color2)
+}
+
+#jp-main-statusbar > .p-Widget >.p-Widget:hover {
+    background-color: var(--jp-layout-color3)
+}
