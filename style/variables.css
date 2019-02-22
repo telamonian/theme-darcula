@@ -37,51 +37,51 @@ all of MD as it is not optimized for dense, information rich UIs.
    * colors used in the theme as well. */
   --jp-shadow-base-lightness: 32;
   --jp-shadow-umbra-color: rgba(
-          var(--jp-shadow-base-lightness),
-          var(--jp-shadow-base-lightness),
-          var(--jp-shadow-base-lightness),
-          0.2
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.2
   );
   --jp-shadow-penumbra-color: rgba(
-          var(--jp-shadow-base-lightness),
-          var(--jp-shadow-base-lightness),
-          var(--jp-shadow-base-lightness),
-          0.14
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.14
   );
   --jp-shadow-ambient-color: rgba(
-          var(--jp-shadow-base-lightness),
-          var(--jp-shadow-base-lightness),
-          var(--jp-shadow-base-lightness),
-          0.12
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.12
   );
   --jp-elevation-z0: none;
   --jp-elevation-z1: 0px 2px 1px -1px var(--jp-shadow-umbra-color),
-  0px 1px 1px 0px var(--jp-shadow-penumbra-color),
-  0px 1px 3px 0px var(--jp-shadow-ambient-color);
+    0px 1px 1px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 3px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z2: 0px 3px 1px -2px var(--jp-shadow-umbra-color),
-  0px 2px 2px 0px var(--jp-shadow-penumbra-color),
-  0px 1px 5px 0px var(--jp-shadow-ambient-color);
+    0px 2px 2px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 5px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z4: 0px 2px 4px -1px var(--jp-shadow-umbra-color),
-  0px 4px 5px 0px var(--jp-shadow-penumbra-color),
-  0px 1px 10px 0px var(--jp-shadow-ambient-color);
+    0px 4px 5px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 10px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z6: 0px 3px 5px -1px var(--jp-shadow-umbra-color),
-  0px 6px 10px 0px var(--jp-shadow-penumbra-color),
-  0px 1px 18px 0px var(--jp-shadow-ambient-color);
+    0px 6px 10px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 18px 0px var(--jp-shadow-ambient-color);
   --jp-elevation-z8: 0px 5px 5px -3px var(--jp-shadow-umbra-color),
-  0px 8px 10px 1px var(--jp-shadow-penumbra-color),
-  0px 3px 14px 2px var(--jp-shadow-ambient-color);
+    0px 8px 10px 1px var(--jp-shadow-penumbra-color),
+    0px 3px 14px 2px var(--jp-shadow-ambient-color);
   --jp-elevation-z12: 0px 7px 8px -4px var(--jp-shadow-umbra-color),
-  0px 12px 17px 2px var(--jp-shadow-penumbra-color),
-  0px 5px 22px 4px var(--jp-shadow-ambient-color);
+    0px 12px 17px 2px var(--jp-shadow-penumbra-color),
+    0px 5px 22px 4px var(--jp-shadow-ambient-color);
   --jp-elevation-z16: 0px 8px 10px -5px var(--jp-shadow-umbra-color),
-  0px 16px 24px 2px var(--jp-shadow-penumbra-color),
-  0px 6px 30px 5px var(--jp-shadow-ambient-color);
+    0px 16px 24px 2px var(--jp-shadow-penumbra-color),
+    0px 6px 30px 5px var(--jp-shadow-ambient-color);
   --jp-elevation-z20: 0px 10px 13px -6px var(--jp-shadow-umbra-color),
-  0px 20px 31px 3px var(--jp-shadow-penumbra-color),
-  0px 8px 38px 7px var(--jp-shadow-ambient-color);
+    0px 20px 31px 3px var(--jp-shadow-penumbra-color),
+    0px 8px 38px 7px var(--jp-shadow-ambient-color);
   --jp-elevation-z24: 0px 11px 15px -7px var(--jp-shadow-umbra-color),
-  0px 24px 38px 3px var(--jp-shadow-penumbra-color),
-  0px 9px 46px 8px var(--jp-shadow-ambient-color);
+    0px 24px 38px 3px var(--jp-shadow-penumbra-color),
+    0px 9px 46px 8px var(--jp-shadow-ambient-color);
 
   /* Borders
    *
@@ -112,7 +112,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-ui-font-size3: 1.44em;
 
   --jp-ui-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   /*
    * Use these font colors against the corresponding main layout colors.
@@ -121,9 +121,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Darkening colors */
   --jp-ui-font-color0: rgba(195, 195, 195, 1);
-  --jp-ui-font-color1: rgba(195, 195, 195, .7);
-  --jp-ui-font-color2: rgba(195, 195, 195, .3);
-  --jp-ui-font-color3: rgba(195, 195, 195, .02);
+  --jp-ui-font-color1: rgba(195, 195, 195, 0.7);
+  --jp-ui-font-color2: rgba(195, 195, 195, 0.3);
+  --jp-ui-font-color3: rgba(195, 195, 195, 0.02);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -170,8 +170,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-link-color: var(--md-blue-300);
 
   --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol';
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
 
   /*
    * Code Fonts
@@ -182,7 +182,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-code-font-size: 15px;
   --jp-code-line-height: 1.3077; /* 17px for 15px base */
   --jp-code-padding: 0.385em; /* 5px for 15px base */
-  --jp-code-font-family-default: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+  --jp-code-font-family-default: Consolas, Menlo, Monaco, 'Lucida Console',
+    'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Courier New', monospace, serif;
   --jp-code-font-family: var(--jp-code-font-family-default);
 
   /* This gives a magnification of about 125% in presentation mode over normal. */
@@ -199,12 +201,12 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: #2B2B2B;
+  --jp-layout-color0: #2b2b2b;
   --jp-layout-color1: #313335; /*var(--md-grey-900);*/
-  --jp-layout-color2: #3C3F41; /*var(--md-grey-800);*/
+  --jp-layout-color2: #3c3f41; /*var(--md-grey-800);*/
   --jp-layout-color3: #555758; /*var(--md-grey-700);*/
   --jp-layout-color4: #626465; /*var(--md-grey-600);*/
-  --jp-layout-color5: #A9B7C6;
+  --jp-layout-color5: #a9b7c6;
 
   /* Inverse Layout
    *
@@ -263,7 +265,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-background: var(--jp-layout-color1);
   --jp-cell-editor-border-color: var(--md-grey-700);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-cell-editor-active-background: var(--jp-layout-color0); /*rgba(33, 33, 33, 1.0);*/
+  --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
 
   --jp-cell-prompt-width: 64px;
@@ -293,8 +295,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   notebook. This padding is to enable a 'scroll past end' feature in a notebook.
   */
   --jp-notebook-scroll-padding: calc(
-          100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
-          var(--jp-code-padding) - var(--jp-cell-padding) - 1px
+    100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
+      var(--jp-code-padding) - var(--jp-cell-padding) - 1px
   );
 
   /* Rendermime styles */
@@ -331,9 +333,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(--jp-layout-color2); /*rgba(33, 66, 131, .5);*/
-  --jp-editor-selected-focused-background: #214283; /*rgba(33, 150, 243, 0.24);*/
-  --jp-editor-cursor-color: #A9B7C6; /*{ border-left: 1px solid var(--jp-ui-font-color0) };*/
+  --jp-editor-selected-background: var(--jp-layout-color2);
+  --jp-editor-selected-focused-background: #214283;
+  --jp-editor-cursor-color: #a9b7c6; /*{ border-left: 1px solid var(--jp-ui-font-color0) };*/
 
   /*
     .cm-s-darcula .CodeMirror-cursor { border-left: 1px solid #A9B7C6; }
@@ -387,31 +389,31 @@ all of MD as it is not optimized for dense, information rich UIs.
   */
 
   /* Code mirror specific styles */
-  --jp-mirror-editor-keyword-color:     #CC7832;
-  --jp-mirror-editor-atom-color:        #CC7832;
-  --jp-mirror-editor-number-color:      #6897BB;
-  --jp-mirror-editor-def-color:         #A9B7C6;
-  --jp-mirror-editor-variable-color:    #A9B7C6;
-  --jp-mirror-editor-variable-2-color:  #A9B7C6;
-  --jp-mirror-editor-variable-3-color:  #9876AA;
-  --jp-mirror-editor-punctuation-color: #FF9E59;
-  --jp-mirror-editor-property-color:    #FFC66D;
-  --jp-mirror-editor-operator-color:    #A9B7C6;
-  --jp-mirror-editor-comment-color:     #808080;
-  --jp-mirror-editor-string-color:      #6A8759;
-  --jp-mirror-editor-string-2-color:    #6A8759;
-  --jp-mirror-editor-meta-color:        #BBB529;
-  --jp-mirror-editor-qualifier-color:   #6A8759;
-  --jp-mirror-editor-builtin-color:     #FF9E59;
-  --jp-mirror-editor-bracket-color:     #A9B7C6;
-  --jp-mirror-editor-tag-color:         #629755;
-  --jp-mirror-editor-attribute-color:   #6897bb;
+  --jp-mirror-editor-keyword-color: #cc7832;
+  --jp-mirror-editor-atom-color: #cc7832;
+  --jp-mirror-editor-number-color: #6897bb;
+  --jp-mirror-editor-def-color: #a9b7c6;
+  --jp-mirror-editor-variable-color: #a9b7c6;
+  --jp-mirror-editor-variable-2-color: #a9b7c6;
+  --jp-mirror-editor-variable-3-color: #9876aa;
+  --jp-mirror-editor-punctuation-color: #ff9e59;
+  --jp-mirror-editor-property-color: #ffc66d;
+  --jp-mirror-editor-operator-color: #a9b7c6;
+  --jp-mirror-editor-comment-color: #808080;
+  --jp-mirror-editor-string-color: #6a8759;
+  --jp-mirror-editor-string-2-color: #6a8759;
+  --jp-mirror-editor-meta-color: #bbb529;
+  --jp-mirror-editor-qualifier-color: #6a8759;
+  --jp-mirror-editor-builtin-color: #ff9e59;
+  --jp-mirror-editor-bracket-color: #a9b7c6;
+  --jp-mirror-editor-tag-color: #629755;
+  --jp-mirror-editor-attribute-color: #6897bb;
 
   --jp-mirror-editor-header-color: var(--md-blue-500);
   --jp-mirror-editor-quote-color: var(--md-green-300);
 
-  --jp-mirror-editor-link-color: #CC7832;
-  --jp-mirror-editor-error-color: #BC3F3C;
+  --jp-mirror-editor-link-color: #cc7832;
+  --jp-mirror-editor-error-color: #bc3f3c;
 
   --jp-mirror-editor-hr-color: #999;
 
@@ -434,9 +436,9 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-scrollbar-background-color: #3f4244;
-  --jp-scrollbar-endpad: 3px;    /* the minimum gap between the thumb and the ends of a scrollbar */
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
 
-  --jp-scrollbar-thumb-color: 88, 96, 97;    /* need to specify thumb color as an RGB triplet */
-  --jp-scrollbar-thumb-margin: 3.5px;    /* the space in between the sides of the thumb and the track */
-  --jp-scrollbar-thumb-radius: 9px;    /* set to a large-ish value for rounded endcaps on the thumb */
+  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 }
