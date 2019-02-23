@@ -1,6 +1,6 @@
 {
   "name": "@telamonian/theme-darcula",
-  "version": "0.20.0",
+  "version": "0.20.1",
   "description": "Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.",
   "keywords": [
     "jupyter",

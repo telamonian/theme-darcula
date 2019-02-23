@@ -120,10 +120,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Darkening colors */
-  --jp-ui-font-color0: rgba(195, 195, 195, 1);
-  --jp-ui-font-color1: rgba(195, 195, 195, 0.7);
-  --jp-ui-font-color2: rgba(195, 195, 195, 0.3);
-  --jp-ui-font-color3: rgba(195, 195, 195, 0.02);
+  --jp-ui-font-color0: rgb(195, 195, 195);
+  --jp-ui-font-color1: rgb(165, 165, 165);
+  --jp-ui-font-color2: rgb(125, 125, 125);
+  --jp-ui-font-color3: rgb(90, 90, 90);
 
   /*
    * Use these against the brand/accent/warn/error colors.
