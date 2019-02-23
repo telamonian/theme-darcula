@@ -8,7 +8,8 @@
 }
 
 /* for code nodes, use a transparent style of scrollbar */
-.CodeMirror-hscrollbar, .CodeMirror-vscrollbar {
+.CodeMirror-hscrollbar,
+.CodeMirror-vscrollbar {
     scrollbar-color: rgba(var(--jp-scrollbar-thumb-color), .5) transparent;
 }
 
@@ -18,7 +19,8 @@
 
 /* use standard opaque scrollbars for most nodes */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+::-webkit-scrollbar-corner {
     background: var(--jp-scrollbar-background-color);
 }
 
@@ -41,7 +43,10 @@
 
 /* for code nodes, use a transparent style of scrollbar */
 
-.CodeMirror-hscrollbar::-webkit-scrollbar, .CodeMirror-vscrollbar::-webkit-scrollbar {
+.CodeMirror-hscrollbar::-webkit-scrollbar,
+.CodeMirror-hscrollbar::-webkit-scrollbar-corner,
+.CodeMirror-vscrollbar::-webkit-scrollbar,
+.CodeMirror-hscrollbar::-webkit-scrollbar-corner {
     background-color: transparent;
 }
 
