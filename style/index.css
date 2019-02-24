@@ -3,6 +3,7 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
+@import './codemirror-darcula.css';
 @import './scrollbars.css';
 @import './status.css';
 @import './variables.css';
