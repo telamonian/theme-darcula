@@ -17,6 +17,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     manager.register({
       name: 'theme-darcula',
       isLight: false,
+      themeScrollbars: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
