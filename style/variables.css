@@ -422,4 +422,12 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Sidebar-related styles */
 
   --jp-sidebar-min-width: 180px;
+
+  /* Scrollbar-related styles */
+  --jp-scrollbar-background-color: #3f4244;
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
+
+  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 }

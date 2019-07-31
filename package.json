@@ -1,6 +1,6 @@
 {
   "name": "@telamonian/theme-darcula",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0",
   "description": "Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.",
   "author": "Max Klein",
   "keywords": [
@@ -24,18 +24,40 @@
     "lib": "lib/"
   },
   "scripts": {
-    "build": "tsc -b",
+    "build": "jlpm install && tsc",
+    "build:link": "jlpm run build && jlpm run link",
+    "build:local": "jlpm run build && jlpm run local",
+    "build:watch": "jlpm run build --watch",
     "clean": "rimraf lib",
-    "prepare": "npm run clean && npm run build",
+    "clean:slate": "jlpm run clean && rimraf node_modules",
+    "integrity": "echo integrity",
+    "link": "jupyter labextension link . --no-build",
+    "local": "jupyter labextension install .",
+    "precommit": "lint-staged",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier --write '**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}'",
+    "unlink": "jupyter labextension unlink jupyterlab-hdf5 --no-build",
     "watch": "tsc -w"
   },
+  "lint-staged": {
+    "**/*{.ts,.tsx,.css,.json,.md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "dependencies": {
-    "@jupyterlab/application": "^1.0.0-alpha.3",
-    "@jupyterlab/apputils": "^1.0.0-alpha.3"
+    "@jupyterlab/application": "^1.0.2",
+    "@jupyterlab/apputils": "^1.0.2"
   },
   "devDependencies": {
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.13.7",
     "rimraf": "~2.6.2",
-    "typescript": "~3.3.1"
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "~3.5.1"
   },
   "publishConfig": {
     "access": "public"
