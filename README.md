@@ -1,6 +1,7 @@
 # @telamonian/theme-darcula
 
-[![Build Status](https://travis-ci.org/telamonian/theme-darcula.svg?branch=master)](https://travis-ci.org/telamonian/theme-darcula)
+[![travis status][travis]][travis-url]
+[![npm_version][npm]][npm-url]
 
 Darcula theme for Jupyterlab. Modelled after the classic Intellij theme. **Update**: dark scrollbars have been added.
 
@@ -45,3 +46,9 @@ To rebuild the package and the JupyterLab app:
 npm run build
 jupyter lab build
 ```
+
+[travis]: https://travis-ci.org/telamonian/theme-darcula.svg?branch=master 
+[travis-url]: https://travis-ci.org/telamonian/theme-darcula
+
+[npm]: https://img.shields.io/npm/v/@telamonian/theme-darcula.svg
+[npm-url]: https://npmjs.com/package/@telamonian/theme-darcula
