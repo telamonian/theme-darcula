@@ -31,6 +31,8 @@ This is the first JupyterLab extension (that I know of) that styles dark scrollb
 
 See [here](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar) and [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars) for more info.
 
+Note that you must enable the JupyterLab setting `"theme-scrollbars"` at `Settings -> Advanced Settings Editor` for scrollbar styling.
+
 ## Development
 
 For a development install (requires npm version 4 or later), do the following in the repository directory:
