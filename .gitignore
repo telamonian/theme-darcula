@@ -17,7 +17,6 @@ dev_mode/stats.json
 packages/theme-*/static
 node_modules
 .cache
-.vscode
 *.py[co]
 .pytest_cache
 __pycache__
@@ -49,6 +48,11 @@ tsconfig.tsbuildinfo
 
 junit.xml
 
-# jetbrains IDE working files
+# jetbrains ide stuff
+*.iml
 .idea/
-/*.iml
+
+# vscode ide stuff
+*.code-workspace
+.history
+.vscode
