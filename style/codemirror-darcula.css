@@ -1,16 +1,38 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) Max Klein.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
 /*
  * Codemirror styling that isn't currently supported by Jupyterlab themes
  */
 
-.cm-s-jupyter .CodeMirror-activeline-background { background: #323232; }
-.cm-s-jupyter .CodeMirror-guttermarker { color: #FFEE80; }
-.cm-s-jupyter .CodeMirror-guttermarker-subtle { color: #D0D0D0; }
-.cm-s-jupyter .CodeMirror-linenumber { color: #606366; }
-.cm-s-jupyter .CodeMirror-matchingbracket { background-color: #3B514D; color: #FFEF28 !important; font-weight: bold; }
+.cm-s-jupyter .CodeMirror-activeline-background {
+  background: #323232;
+}
+.cm-s-jupyter .CodeMirror-guttermarker {
+  color: #ffee80;
+}
+.cm-s-jupyter .CodeMirror-guttermarker-subtle {
+  color: #d0d0d0;
+}
+.cm-s-jupyter .CodeMirror-linenumber {
+  color: #606366;
+}
+.cm-s-jupyter .CodeMirror-matchingbracket {
+  background-color: #3b514d;
+  color: #ffef28 !important;
+  font-weight: bold;
+}
 
-.cm-s-jupyter div.CodeMirror-selected { background: #214283; }
+.cm-s-jupyter div.CodeMirror-selected {
+  background: #214283;
+}
 
-.cm-s-jupyter span.cm-type { color: #AABBCC; font-weight: bold; }
+.cm-s-jupyter span.cm-type {
+  color: #aabbcc;
+  font-weight: bold;
+}
 
 /*
 .cm-s-jupyter span.cm-keyword    { color: #CC7832; line-height: 1em; font-weight: bold; }

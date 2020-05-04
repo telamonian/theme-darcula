@@ -1,3 +1,6 @@
+// Copyright (c) Max Klein.
+// Distributed under the terms of the Modified BSD License.
+
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
