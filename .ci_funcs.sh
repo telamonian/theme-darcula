@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
@@ -9,8 +9,7 @@ ci_install() {
     # Install JupyterLab and enable the server extension
     pip install -q --upgrade pip
     pip --version
-    pip install cookiecutter jupyterlab
-    jupyter serverextension enable --py jupyterlab
+    pip install --upgrade --upgrade-strategy=eager cookiecutter "jupyterlab~=1.0"
 }
 
 ci_script() {

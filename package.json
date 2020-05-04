@@ -1,7 +1,8 @@
 {
   "name": "@telamonian/theme-darcula",
-  "version": "0.20.1",
+  "version": "1.1.3",
   "description": "Darcula theme for Jupyterlab. Modelled after the classic Intellij theme.",
+  "author": "Max Klein",
   "keywords": [
     "jupyter",
     "jupyterlab",
@@ -10,12 +11,7 @@
     "darcula",
     "darcula-theme"
   ],
-  "homepage": "https://github.com/telamonian/theme-darcula",
-  "bugs": {
-    "url": "https://github.com/telamonian/theme-darcula/issues"
-  },
   "license": "BSD-3-Clause",
-  "author": "Max Klein",
   "files": [
     "lib/*.d.ts",
     "lib/*.js.map",
@@ -27,30 +23,55 @@
   "directories": {
     "lib": "lib/"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/telamonian/theme-darcula.git"
-  },
   "scripts": {
-    "build": "tsc -b",
+    "build": "jlpm install && tsc",
+    "build:link": "jlpm run build && jlpm run link",
+    "build:local": "jlpm run build && jlpm run local",
+    "build:watch": "jlpm run build --watch",
     "clean": "rimraf lib",
-    "prepare": "npm run clean && npm run build",
+    "clean:slate": "jlpm run clean && rimraf node_modules",
+    "integrity": "echo integrity",
+    "link": "jupyter labextension link . --no-build",
+    "local": "jupyter labextension install .",
+    "precommit": "lint-staged",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier --write '**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}'",
+    "unlink": "jupyter labextension unlink jupyterlab-hdf5 --no-build",
     "watch": "tsc -w"
   },
+  "lint-staged": {
+    "**/*{.ts,.tsx,.css,.json,.md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "dependencies": {
-    "@jupyterlab/application": "^0.19.1",
-    "@jupyterlab/apputils": "^0.19.1"
+    "@jupyterlab/application": "^1.1.3",
+    "@jupyterlab/apputils": "^1.1.3"
   },
   "devDependencies": {
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.13.7",
     "rimraf": "~2.6.2",
-    "typescript": "~3.1.1"
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "~3.5.1"
   },
   "publishConfig": {
     "access": "public"
   },
   "jupyterlab": {
     "extension": true,
-    "themeDir": "style",
     "themePath": "style/index.css"
+  },
+  "homepage": "https://github.com/telamonian/theme-darcula",
+  "bugs": {
+    "url": "https://github.com/telamonian/theme-darcula/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telamonian/theme-darcula.git"
   }
 }
