@@ -29,6 +29,7 @@
   },
   "scripts": {
     "build": "tsc -b",
+    "build:dev": "jlpm install && jlpm build && jupyter labextension install .",
     "clean": "rimraf lib",
     "clean:slate": "jlpm run clean && rimraf node_modules",
     "precommit": "lint-staged",
