@@ -16,28 +16,25 @@
     "lib/*.d.ts",
     "lib/*.js.map",
     "lib/*.js",
-    "style/*"
+    "style/codemirror-darcula.css",
+    "style/index.css",
+    "style/variables.css"
   ],
+  "sideEffects": true,
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "style": "style/index.css",
   "directories": {
     "lib": "lib/"
   },
   "scripts": {
-    "build": "jlpm install && tsc",
-    "build:link": "jlpm run build && jlpm run link",
-    "build:local": "jlpm run build && jlpm run local",
-    "build:watch": "jlpm run build --watch",
+    "build": "tsc -b",
     "clean": "rimraf lib",
     "clean:slate": "jlpm run clean && rimraf node_modules",
-    "integrity": "echo integrity",
-    "link": "jupyter labextension link . --no-build",
-    "local": "jupyter labextension install .",
     "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
     "prettier": "prettier --write '**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}'",
-    "unlink": "jupyter labextension unlink jupyterlab-hdf5 --no-build",
-    "watch": "tsc -w"
+    "watch": "tsc -b --watch"
   },
   "lint-staged": {
     "**/*{.ts,.tsx,.css,.json,.md}": [
