@@ -21,13 +21,12 @@ jupyter labextension install @telamonian/theme-darcula
 For a development install (requires npm version 4 or later), do the following in the repository directory:
 
 ```bash
-npm install
-jupyter labextension link .
+jlpm build:dev
 ```
 
 To rebuild the package and the JupyterLab app:
 
 ```bash
-npm run build
+jlpm build
 jupyter lab build
 ```

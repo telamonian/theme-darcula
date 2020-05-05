@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------
-| Copyright (c) Jupyter Development Team.
+| Copyright (c) Max Klein.
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
@@ -90,7 +90,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-border-width: 1px;
   --jp-border-color0: var(--md-grey-700);
-  --jp-border-color1: var(--md-grey-800);
+  --jp-border-color1: var(--md-grey-700);
   --jp-border-color2: var(--md-grey-800);
   --jp-border-color3: var(--md-grey-900);
   --jp-border-radius: 2px;
@@ -119,21 +119,33 @@ all of MD as it is not optimized for dense, information rich UIs.
    * In a light theme, these go from dark to light.
    */
 
+  --jp-ui-font-color0: rgb(195, 195, 195);
+  --jp-ui-font-color1: rgb(165, 165, 165);
+  --jp-ui-font-color2: rgb(125, 125, 125);
+  --jp-ui-font-color3: rgb(90, 90, 90);
+
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: #a9b7c6;
-  --jp-ui-font-color1: var(--md-grey-300);
-  --jp-ui-font-color2: var(--md-grey-500);
-  --jp-ui-font-color3: var(--md-grey-700);
+  /*
+   * --jp-ui-font-color0: #a9b7c6;
+   * --jp-ui-font-color1: var(--md-grey-300);
+   * --jp-ui-font-color2: var(--md-grey-500);
+   * --jp-ui-font-color3: var(--md-grey-700);
+   *
+   * --jp-ui-font-color0: rgba(195, 195, 195, 1);
+   * --jp-ui-font-color1: rgba(195, 195, 195, 0.87);
+   * --jp-ui-font-color2: rgba(195, 195, 195, 0.54);
+   * --jp-ui-font-color3: rgba(195, 195, 195, 0.38);
+  */
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
-  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
-  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+  --jp-ui-inverse-font-color0: rgba(30, 33, 36, 1);
+  --jp-ui-inverse-font-color1: rgba(30, 33, 36, 0.8);
+  --jp-ui-inverse-font-color2: rgba(30, 33, 36, 0.5);
+  --jp-ui-inverse-font-color3: rgba(30, 33, 36, 0.3);
 
   /* Content Fonts
    *
@@ -154,18 +166,18 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-size5: 2.0736em;
 
   /* This gives a magnification of about 125% in presentation mode over normal. */
-  --jp-content-presentation-font-size1: 17px;
+  --jp-content-presentation-font-size1: 1.25em;
 
   --jp-content-heading-line-height: 1;
   --jp-content-heading-margin-top: 1.2em;
   --jp-content-heading-margin-bottom: 0.8em;
   --jp-content-heading-font-weight: 500;
 
-  /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(255, 255, 255, 1);
-  --jp-content-font-color1: rgba(255, 255, 255, 1);
-  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+  /* Shades of the default font color */
+  --jp-content-font-color0: rgba(187, 187, 187, 1);
+  --jp-content-font-color1: rgba(187, 187, 187, 1);
+  --jp-content-font-color2: rgba(187, 187, 187, 0.7);
+  --jp-content-font-color3: rgba(187, 187, 187, 0.5);
 
   --jp-content-link-color: var(--md-blue-300);
 
@@ -191,9 +203,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-code-presentation-font-size: 1.25em;
 
   /* may need to tweak cursor width if you change font size */
-  --jp-code-cursor-width0: 0.107em;
-  --jp-code-cursor-width1: 0.154em;
-  --jp-code-cursor-width2: 0.308em;
+  --jp-code-cursor-width0: 2px; /*0.107em;*/
+  --jp-code-cursor-width1: 3px; /*0.154em;*/
+  --jp-code-cursor-width2: 6px; /*0.308em;*/
 
   /* Layout
    *
@@ -226,6 +238,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-brand-color1: var(--md-blue-500);
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
+  --jp-brand-color4: var(--md-blue-50);
 
   --jp-accent-color0: var(--md-green-700);
   --jp-accent-color1: var(--md-green-500);
@@ -265,9 +278,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-background: var(--jp-layout-color1);
   --jp-cell-editor-border-color: var(--md-grey-700);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-cell-editor-active-background: var(
-    --jp-layout-color0
-  ); /*rgba(33, 33, 33, 1.0);*/
+  --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
 
   --jp-cell-prompt-width: 64px;
@@ -332,13 +343,12 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-input-background: var(--md-grey-800);
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
+  --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(
-    --jp-layout-color2
-  ); /*rgba(33, 66, 131, .5);*/
-  --jp-editor-selected-focused-background: #214283; /*rgba(33, 150, 243, 0.24);*/
+  --jp-editor-selected-background: var(--jp-layout-color2);
+  --jp-editor-selected-focused-background: #214283;
   --jp-editor-cursor-color: #a9b7c6; /*{ border-left: 1px solid var(--jp-ui-font-color0) };*/
 
   /*
@@ -429,11 +439,33 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-sidebar-min-width: 180px;
 
-  /* Scrollbar-related styles */
+  /* Search-related styles */
+
+  --jp-search-toggle-off-opacity: 0.6;
+  --jp-search-toggle-hover-opacity: 0.8;
+  --jp-search-toggle-on-opacity: 1;
+  --jp-search-selected-match-background-color: rgb(255, 225, 0);
+  --jp-search-selected-match-color: black;
+  --jp-search-unselected-match-background-color: var(
+    --jp-inverse-layout-color0
+  );
+  --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+
+  /* scrollbar related styles. Supports every browser except Edge. */
+
   --jp-scrollbar-background-color: #3f4244;
+  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+
   --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
 
-  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  /* hacks for setting the thumb shape. These do nothing in Firefox */
+
   --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
   --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
+
+  /* Icon colors that work well with light or dark backgrounds */
+  --jp-icon-contrast-color0: var(--md-purple-600);
+  --jp-icon-contrast-color1: var(--md-green-600);
+  --jp-icon-contrast-color2: var(--md-pink-600);
+  --jp-icon-contrast-color3: var(--md-blue-600);
 }

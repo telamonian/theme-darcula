@@ -1,13 +1,10 @@
 /*-----------------------------------------------------------------------------
-| Copyright (c) Jupyter Development Team.
+| Copyright (c) Max Klein.
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-@import './codemirror-darcula.css';
-@import './scrollbars.css';
-@import './status.css';
-@import './variables.css';
-@import './urls.css';
+@import "./codemirror-darcula.css";
+@import "./variables.css";
 
 /* Set the default typography for monospace elements */
 tt,

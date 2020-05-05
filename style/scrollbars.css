@@ -1,16 +1,27 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) Max Klein.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+/*
+ * scrollbars.css has been pushed to upstream JupyterLab core as of
+ * jlab-1.0. This file is kept here for historical purposes
+ */
+
 /*
  * mozilla CSS
  */
 
 /* use standard opaque scrollbars for most nodes */
 :root {
-    scrollbar-color: rgb(var(--jp-scrollbar-thumb-color)) var(--jp-scrollbar-background-color);
+  scrollbar-color: rgb(var(--jp-scrollbar-thumb-color))
+    var(--jp-scrollbar-background-color);
 }
 
 /* for code nodes, use a transparent style of scrollbar */
 .CodeMirror-hscrollbar,
 .CodeMirror-vscrollbar {
-    scrollbar-color: rgba(var(--jp-scrollbar-thumb-color), .5) transparent;
+  scrollbar-color: rgba(var(--jp-scrollbar-thumb-color), 0.5) transparent;
 }
 
 /*
@@ -21,24 +32,28 @@
 
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
-    background: var(--jp-scrollbar-background-color);
+  background: var(--jp-scrollbar-background-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(var(--jp-scrollbar-thumb-color));
-    border: var(--jp-scrollbar-thumb-margin) solid transparent;
-    background-clip: content-box;
-    border-radius: var(--jp-scrollbar-thumb-radius);
+  background: rgb(var(--jp-scrollbar-thumb-color));
+  border: var(--jp-scrollbar-thumb-margin) solid transparent;
+  background-clip: content-box;
+  border-radius: var(--jp-scrollbar-thumb-radius);
 }
 
 ::-webkit-scrollbar-track:horizontal {
-    border-left:  var(--jp-scrollbar-endpad) solid var(--jp-scrollbar-background-color);
-    border-right: var(--jp-scrollbar-endpad) solid var(--jp-scrollbar-background-color);
+  border-left: var(--jp-scrollbar-endpad) solid
+    var(--jp-scrollbar-background-color);
+  border-right: var(--jp-scrollbar-endpad) solid
+    var(--jp-scrollbar-background-color);
 }
 
 ::-webkit-scrollbar-track:vertical {
-    border-top:    var(--jp-scrollbar-endpad) solid var(--jp-scrollbar-background-color);
-    border-bottom: var(--jp-scrollbar-endpad) solid var(--jp-scrollbar-background-color);
+  border-top: var(--jp-scrollbar-endpad) solid
+    var(--jp-scrollbar-background-color);
+  border-bottom: var(--jp-scrollbar-endpad) solid
+    var(--jp-scrollbar-background-color);
 }
 
 /* for code nodes, use a transparent style of scrollbar */
@@ -47,22 +62,23 @@
 .CodeMirror-hscrollbar::-webkit-scrollbar-corner,
 .CodeMirror-vscrollbar::-webkit-scrollbar,
 .CodeMirror-hscrollbar::-webkit-scrollbar-corner {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.CodeMirror-hscrollbar::-webkit-scrollbar-thumb, .CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
-    background: rgba(var(--jp-scrollbar-thumb-color), .5);
-    border: var(--jp-scrollbar-thumb-margin) solid transparent;
-    background-clip: content-box;
-    border-radius: var(--jp-scrollbar-thumb-radius);
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb,
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
+  background: rgba(var(--jp-scrollbar-thumb-color), 0.5);
+  border: var(--jp-scrollbar-thumb-margin) solid transparent;
+  background-clip: content-box;
+  border-radius: var(--jp-scrollbar-thumb-radius);
 }
 
 .CodeMirror-hscrollbar::-webkit-scrollbar-track:horizontal {
-    border-left:  var(--jp-scrollbar-endpad) solid transparent;
-    border-right: var(--jp-scrollbar-endpad) solid transparent;
+  border-left: var(--jp-scrollbar-endpad) solid transparent;
+  border-right: var(--jp-scrollbar-endpad) solid transparent;
 }
 
 .CodeMirror-vscrollbar::-webkit-scrollbar-track:vertical {
-    border-top:    var(--jp-scrollbar-endpad) solid transparent;
-    border-bottom: var(--jp-scrollbar-endpad) solid transparent;
+  border-top: var(--jp-scrollbar-endpad) solid transparent;
+  border-bottom: var(--jp-scrollbar-endpad) solid transparent;
 }
