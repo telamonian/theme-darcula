@@ -1,27 +1,28 @@
-import {
-  JupyterLab, JupyterLabPlugin
-} from '@jupyterlab/application';
+// Copyright (c) Max Klein.
+// Distributed under the terms of the Modified BSD License.
 
 import {
-  IThemeManager
-} from '@jupyterlab/apputils';
+  JupyterFrontEnd,
+  JupyterFrontEndPlugin
+} from "@jupyterlab/application";
+
+import { IThemeManager } from "@jupyterlab/apputils";
 
 /**
- * A plugin for the Telamonian Darcula
+ * A plugin for @telamonian/theme-darcula
  */
-const plugin: JupyterLabPlugin<void> = {
-  id: '@telamonian/theme-darcula:plugin',
+const plugin: JupyterFrontEndPlugin<void> = {
+  id: "@telamonian/theme-darcula:plugin",
   requires: [IThemeManager],
-  activate: function(app: JupyterLab, manager: IThemeManager) {
+  activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
+    const style = "@telamonian/theme-darcula/index.css";
+
     manager.register({
-      name: 'Telamonian Darcula',
+      name: "theme-darcula",
       isLight: false,
-      load: function() {
-        return manager.loadCSS('@telamonian/theme-darcula/index.css');
-      },
-      unload: function() {
-        return Promise.resolve(void 0);
-      }
+      themeScrollbars: true,
+      load: () => manager.loadCSS(style),
+      unload: () => Promise.resolve(undefined)
     });
   },
   autoStart: true

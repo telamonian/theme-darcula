@@ -1,0 +1,29 @@
+jobs:
+- job: 'Smoketest'
+  pool:
+    vmImage: 'ubuntu-latest'
+  variables:
+    python.version: '3.7'
+    gh.ref: github.com/telamonian/theme-darcula.git
+
+  steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(python.version)'
+        architecture: 'x64'
+
+    - task: Bash@3
+      displayName: 'ci_install'
+      inputs:
+        targetType: 'inline'
+        script: |
+          source ./.ci_funcs.sh
+          ci_install
+
+    - task: Bash@3
+      displayName: 'ci_script'
+      inputs:
+        targetType: 'inline'
+        script: |
+          source ./.ci_funcs.sh
+          ci_script

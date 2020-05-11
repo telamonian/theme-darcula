@@ -1,15 +1,13 @@
-sudo: false
-dist: trusty
-
 language: python
-python: 3.6
-
+python:
+  - '3.7'
 cache:
   pip: true
   directories:
     - /home/travis/.yarn-cache/
 
 before_install:
+  - nvm install 12
   - source ./.ci_funcs.sh
 install:
   - ci_install
