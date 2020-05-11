@@ -17,6 +17,10 @@ Darcula theme for Jupyterlab. Modelled after the classic Intellij theme. Now wit
 jupyter labextension install @telamonian/theme-darcula
 ```
 
+## Dark scrollbars
+
+Enable dark scrollbars by clicking on **Settings** -> **JupyterLab Theme** -> **Theme Scrollbars** in the JupyterLab menus.
+
 ## Development
 
 For a development install (requires JupyterLab 2.0.0 or later), do the following in the repository directory:
@@ -31,3 +35,9 @@ To rebuild the package and the JupyterLab app:
 jlpm build
 jupyter lab build
 ```
+
+## History
+
+This was the first JupyterLab theme that included dark scrollbars. As of JupyterLab 1.0, the dark scrollbars feature from this theme was incorporated into JupyterLab core, as part of [@jupyterlab/application/style/scrollbar.css](https://github.com/jupyterlab/jupyterlab/blob/6d5240dda71fb3d12814e8b88b09e94e23d42875/packages/application/style/scrollbar.css).
+
+JupyterLab itself now supports dark scrollbars for dark themes in Chrome, Firefox, and Safari. See [here](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar) and [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars) for more info on how this is done.
