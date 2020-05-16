@@ -18,7 +18,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const style = "@telamonian/theme-darcula/index.css";
 
     manager.register({
-      name: "theme-darcula",
+      name: "Darcula",
       isLight: false,
       themeScrollbars: true,
       load: () => manager.loadCSS(style),
