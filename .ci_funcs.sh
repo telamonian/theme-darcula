@@ -25,7 +25,7 @@ ci_script() {
 
     # enable the theme in user-settings
     mkdir -p $(dirname $THEME_SETTINGS)
-    printf "%s\n" "{" "    \"theme\": \"theme-darcula\"" "}" > $THEME_SETTINGS
+    printf "%s\n" "{" "    \"theme\": \"Darcula\"" "}" > $THEME_SETTINGS
 
     # run a test of the main JupyterLab app with the theme enabled
     python -m jupyterlab.browser_check
