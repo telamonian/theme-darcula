@@ -56,3 +56,5 @@ junit.xml
 *.code-workspace
 .history
 .vscode
+
+theme-darcula/labextension
