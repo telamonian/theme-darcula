@@ -43,7 +43,7 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlab/application": "^2.0.0 || ^3.0.0-rc.13",
+    "@jupyterlab/application": "^2.0.0 || ^3.0.0",
     "@jupyterlab/apputils": "^2.0.0 || ^3.0.0"
   },
   "devDependencies": {
