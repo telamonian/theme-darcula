@@ -1,23 +1,19 @@
 #!/usr/bin/env bash
 
-VERSION=2.0.0
+VERSION=3.0.1
 
-## git tagging
-git tag "v${VERSION}"
-git push origin "v${VERSION}"
+## force version in package.json to match VERSION from this script
+npm --no-git-tag-version version $VERSION --force --allow-same-version
 
 ## pypi stuff
 # build the tar release and binary wheels
-# python setup.py sdist bdist_wheel
-
-# build the tar release
-#python setup.py sdist
+ python setup.py sdist bdist_wheel
 
 # release to the test server
 # twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
 # release to the production server
-#twine upload dist/*
+# twine upload dist/*
 
 ## npmjs stuff
 # dry run build and release
@@ -25,3 +21,8 @@ git push origin "v${VERSION}"
 
 # build and release
 npm publish --access public
+
+## git tagging
+git commit -a -m "commit for version ${VERSION} release"
+git tag "v${VERSION}"
+git push origin --tags

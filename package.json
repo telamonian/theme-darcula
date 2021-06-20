@@ -1,6 +1,6 @@
 {
   "name": "@telamonian/theme-darcula",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Darcula theme for JupyterLab. Modelled after the classic Intellij theme.",
   "keywords": [
     "jupyter",
@@ -46,7 +46,7 @@
     "@jupyterlab/apputils": "^2.0.0 || ^3.0.0"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "^3.0.0-rc.13",
+    "@jupyterlab/builder": "^3.0.9",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "eslint": "^7.5.0",
