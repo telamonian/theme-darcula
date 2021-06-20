@@ -13,7 +13,7 @@ npm --no-git-tag-version version $VERSION --force --allow-same-version
 # twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
 # release to the production server
-# twine upload dist/*
+twine upload dist/*
 
 ## npmjs stuff
 # dry run build and release
@@ -25,4 +25,5 @@ npm publish --access public
 ## git tagging
 git commit -a -m "commit for version ${VERSION} release"
 git tag "v${VERSION}"
-git push origin --tags
+git push
+git push --tags
