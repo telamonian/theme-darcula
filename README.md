@@ -14,8 +14,22 @@ Darcula theme for Jupyterlab. Modelled after the classic Intellij theme. Now wit
 
 ## Installation
 
+With `pip`:
+
 ```bash
 pip install theme-darcula
+```
+
+With `mamba`:
+
+```bash
+mamba install -c conda-forge theme-darcula
+```
+
+With `conda`:
+
+```bash
+conda install -c conda-forge theme-darcula
 ```
 
 **For Jupyterlab < 3**
