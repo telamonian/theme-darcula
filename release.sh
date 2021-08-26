@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
-VERSION=3.0.1
+VERSION=3.1.0
 
 ## force version in package.json to match VERSION from this script
 npm --no-git-tag-version version $VERSION --force --allow-same-version
 
 ## pypi stuff
 # build the tar release and binary wheels
- python setup.py sdist bdist_wheel
+rm -rf build dist
+python setup.py sdist bdist_wheel
 
 # release to the test server
 # twine upload --repository-url https://test.pypi.org/legacy/ dist/*
