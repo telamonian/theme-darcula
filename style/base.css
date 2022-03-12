@@ -38,6 +38,26 @@
   border-bottom-right-radius: 0px;
 }
 
+.jp-mod-active.jp-InputCollapser.jp-Cell-inputCollapser {
+  border-bottom-left-radius: 0;
+}
+
+.jp-Cell-outputCollapser {
+  border-top-left-radius: 0;
+}
+
 .jp-OutputArea-child .jp-OutputArea-output {
   margin-bottom: 1rem;
+}
+
+.jp-mod-active .jp-Completer-typeExtended {
+  color: inherit;
+}
+
+.jp-RenderedText pre .ansi-yellow-bg {
+  background-color: #610606;
+}
+
+.jp-Cell:not(.jp-mod-noOutputs) .jp-Cell-outputWrapper {
+  margin-top: 0;
 }

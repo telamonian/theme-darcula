@@ -7,6 +7,8 @@
 Darcula theme for Jupyterlab. Modelled after the classic Intellij theme. Now with support for all JupyterLab 2.x and 3.x versions!
 
 ![darcula_preview](darcula_preview.png)
+![](2.png)
+![](3.png)
 
 ## Prerequisites
 
@@ -49,10 +51,11 @@ For a development install (requires JupyterLab 2.0.0 or later), do the following
 jlpm build:dev
 ```
 
-To rebuild the package and the JupyterLab app:
+To rebuild the package and the JupyterLab app (if using Anaconda, run from specific environment):
 
 ```bash
-jlpm build
+jlpm build:prod
+jlpm install:extension
 jupyter lab build
 ```
 

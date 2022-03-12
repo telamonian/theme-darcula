@@ -314,7 +314,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
+  --jp-rendermime-error-background: transparent;
   --jp-rendermime-table-row-background: var(--md-grey-900);
   --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
 
