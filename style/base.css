@@ -1,0 +1,43 @@
+.jp-InputArea-editor {
+  border: none;
+  border-radius: 2px;
+  background-color: #222;
+}
+
+.jp-Notebook .jp-Cell .jp-InputPrompt {
+  background-color: #2b2b2b;
+}
+
+.CodeMirror-lines {
+  padding: var(--jp-code-padding) 0.3rem;
+}
+
+.jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor {
+  border: none;
+  box-shadow: none; 
+  background-color: #222;
+}
+
+.jp-Cell {
+  margin: 1rem !important;
+  padding: 0 !important;
+}
+
+.jp-mod-selected {
+  background-color: #353434;
+  border-radius: 2px;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 40%);
+}
+
+.cm-lsp-highlight, span.CodeMirror-selectedtext {
+  border-radius: 2px;
+}
+
+.jp-Collapser {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.jp-OutputArea-child .jp-OutputArea-output {
+  margin-bottom: 1rem;
+}

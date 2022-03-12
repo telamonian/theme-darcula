@@ -5,6 +5,7 @@
 
 @import "./codemirror-darcula.css";
 @import "./variables.css";
+@import "./base.css";
 
 /* Set the default typography for monospace elements */
 tt,
