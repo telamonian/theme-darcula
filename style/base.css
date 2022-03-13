@@ -58,6 +58,11 @@
   background-color: #610606;
 }
 
+.jp-RenderedHTMLCommon table {
+  font-size: var(--jp-ui-font-size1); 
+}
+
 .jp-Cell:not(.jp-mod-noOutputs) .jp-Cell-outputWrapper {
   margin-top: 0;
 }
+

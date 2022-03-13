@@ -51,7 +51,7 @@ For a development install (requires JupyterLab 2.0.0 or later), do the following
 jlpm build:dev
 ```
 
-To rebuild the package and the JupyterLab app (if using Anaconda, run from specific environment):
+To rebuild the package and the JupyterLab app (if using Anaconda, run from specific environment, will probably require administrator priviledges):
 
 ```bash
 jlpm build:prod
