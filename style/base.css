@@ -50,6 +50,10 @@
   margin-bottom: 1rem;
 }
 
+.jp-OutputArea-output pre {
+  padding: 0.3rem 0;
+}
+
 .jp-mod-active .jp-Completer-typeExtended {
   color: inherit;
 }
