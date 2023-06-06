@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/pypi/v/theme-darcula.svg)](https://pypi.org/project/theme-darcula/)
 [![npm](https://img.shields.io/npm/v/@telamonian/theme-darcula.svg)](https://www.npmjs.com/package/@telamonian/theme-darcula)
 
-Darcula theme for Jupyterlab. Modelled after the classic Intellij theme. Now with support for all JupyterLab 2.x and 3.x versions!
+Darcula theme for Jupyterlab. Modelled after the classic Intellij theme. Now with support for all JupyterLab 2.x, 3.x, and 4.x versions!
 
 ![darcula_preview](darcula_preview.png)
 
